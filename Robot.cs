@@ -1,6 +1,5 @@
-﻿// Author: Pehr Collins
-// ECE 578
-// Genetic Algorithms Robot Maze Solver Assignment
+// Author: Pehr Collins
+// Genetic Algorithms Robot Maze Solver
 // 10/14/2010
 
 
@@ -218,8 +217,8 @@ namespace GeneticMazeSolver
         // If a robot hits a wall it will immediately return its fitness value of based on its current location
         // and the fact that it hit a wall.
         // Note that the fitness value of 0.0 was previously used to effectively kill robots that hit walls.
-        // Assigning fitness values of 0.0 to robots that hit walls was done to meet the requirement is 
-        // of the assignment that stated that these robots die.  This decreased the effectiveness of the
+        // Assigning fitness values of 0.0 to robots that hit walls was done to meet the requirement 
+		// that stated that these robots die.  This decreased the effectiveness of the
         // genetic algorithm since robots that were close to solving the maze that hit walls were 
         // eliminated from the gene pool, even though they could have potentially help generate a solution
         // with their offspring.
@@ -262,8 +261,6 @@ namespace GeneticMazeSolver
                         }
                         if ('*' == maze.grid[position[0], position[1]])
                         {
-                            // TODO: look at this...it doesn't jibe with comment above
-                            // and maybe this is somehow allowing robots to walk through walls
                             // We have hit a wall so return a fitness value now
                             fitness = CalculateFitness(movesMade, position, maze, reachedGoal);
                             return fitness;

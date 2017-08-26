@@ -1,6 +1,5 @@
 ﻿// Author: Pehr Collins
-// ECE 578
-// Genetic Algorithms Robot Maze Solver Assignment
+// Genetic Algorithms Robot Maze Solver 
 // 10/14/2010
 
 using System;
