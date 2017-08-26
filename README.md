@@ -1,4 +1,4 @@
 # Genetic-Maze-Solver
 
-# Solves a maze using genetic algorithms. For use with the Lego NXT robot. 
-# Coded in C# .NET making use of Microsoft RDS (Robotics Development Studio)
+# Solves a maze using genetic algorithms. The robots in this project are virtual 
+# Coded in C# .NET 
